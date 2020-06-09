@@ -8,7 +8,7 @@ android {
     compileSdkVersion rootProject.compileSdkVersion
     buildToolsVersion rootProject.buildToolsVersion
     defaultConfig {
-        minSdkVersion 14
+        minSdkVersion rootProject.min_sdk_version
         targetSdkVersion rootProject.compileSdkVersion
         versionCode 1
         versionName PUBLISH_VERSION
