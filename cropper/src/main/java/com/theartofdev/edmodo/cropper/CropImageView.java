@@ -251,8 +251,7 @@ public class CropImageView extends FrameLayout {
                   R.styleable.CropImageView_cropGuidelinesThickness, options.guidelinesThickness);
           options.guidelinesColor =
               ta.getInteger(R.styleable.CropImageView_cropGuidelinesColor, options.guidelinesColor);
-          options.backgroundColor =
-              ta.getInteger(R.styleable.CropImageView_cropBackgroundColor, options.backgroundColor);
+          options.backgroundColor = ta.getInteger(R.styleable.CropImageView_cropBackgroundColor, options.backgroundColor);
           options.showCropOverlay =
               ta.getBoolean(R.styleable.CropImageView_cropShowCropOverlay, mShowCropOverlay);
           options.showProgressBar =

@@ -1,6 +1,6 @@
 plugins {
     id("com.android.library")
-    id("maven-publish")
+    // id("maven-publish")
 }
 
 android {
@@ -28,21 +28,21 @@ android {
 // The version listed here is a temp hack to allow me to keep working.
 android.libraryVariants
 
-configure<PublishingExtension> {
-    publications {
-        create<MavenPublication>(project.name) {
+// configure<PublishingExtension> {
+//     publications {
+//         create<MavenPublication>(project.name) {
+//
+//
+//         groupId = project.extra.get("PUBLISH_GROUP_ID") as String
+//                 artifactId = project.extra.get("PUBLISH_ARTIFACT_ID") as String
+//                 version  = (project.extra.get("PUBLISH_VERSION") as String) + "-SNAPSHOT"
+//
+//             //artifact bundleRelease
+//         }
+//     }
+// }
 
-
-        groupId = project.extra.get("PUBLISH_GROUP_ID") as String
-                artifactId = project.extra.get("PUBLISH_ARTIFACT_ID") as String
-                version  = (project.extra.get("PUBLISH_VERSION") as String) + "-SNAPSHOT"
-
-            //artifact bundleRelease
-        }
-    }
-}
-
-apply(from = "https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle")
+// apply(from = "https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle")
 
 dependencies {
     api(Deps.AndroidX.appCompat)
